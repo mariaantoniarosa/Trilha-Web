@@ -29,10 +29,14 @@
 			onsubmit="return validaFaleConosco()">
 			<fieldset class="faleConosco">
 				<legend>Dados Pessoais:</legend>
-				<label for="nome"> Nome: </label> <input type="text" name="txtnome"
+				<label for="nome"> Nome: </label> <input type="text" name="txtnome" placeholder = "Digite seu nome completo"
 					id="nome"> <label for="fone"> Telefone: </label> <input
-					type="text" name="txtfone" id="fone"> <label for="email">E-mail:
-				</label> <input type="email" name="txtemail" id="email">
+					type="text" name="txtfone" placeholder = "(xx)xxxxx-xxxx" id="fone"> <label for="email">E-mail:
+				</label> <input type="email" name="txtemail" placeholder = "seuemail@hotmail.com" id="email">
+				<div id="checkboxes">
+					<label for = "sexoF">Feminino</label><input type = "checkbox" id = "sexoF" name = "sexoF" >
+					<label for = "sexoM">Masculino</label><input type = "checkbox" id = "sexoM" name = "sexoM" >
+				</div>  
 			</fieldset>
 
 			<fieldset class="faleConosco">
@@ -44,10 +48,11 @@
 					<option value="SU">Sugestão</option>
 					<option value="PR">Informação sobre Produto</option>
 				</select>
-				<div id="opcaoProduto"></div>
+				<div id="opcaoProduto" ></div> 
 
 				<label for="comentario"> Comentário</label>
-				<textarea name="txtcomentario" id="comentario"></textarea>
+				<textarea name="txtcomentario" id="comentario" ></textarea>
+				<label for = "botao">Desejo participar e receber e-mails.</label><input type = "checkbox" id = "botao" name = "botao" >
 				<button type="reset" onclick="verificaMotivo(null)">Limpar</button>
 				<button type="submit">Enviar</button>
 			</fieldset>

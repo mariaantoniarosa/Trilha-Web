@@ -1,63 +1,59 @@
 @charset "UTF-8";
 
-body { 
- 	margin: 0 auto;
- 	font-family: "Century Gothic", sans-serif;
-	
+body {
+	margin: 0 auto;
+	font-family: "Century Gothic", sans-serif;
 }
-header{
+
+header {
 	height: 170px;
-	background-color:#008eb6;
+	background-color: #008eb6;
 }
-header img{
- 	float: left; 
+
+header img {
+	float: left;
 	height: 150px;
 	width: 150px;
 	margin: 10px;
 }
 
 header h1 {
-	float:left;
+	float: left;
 	margin: 50px 0 0 30px;
 	font-size: 60px;
 	color: #ffffff;
 }
 
-nav{ 
+nav {
 	clear: both;
 	width: 80%;
 	margin: 0px auto;
 	height: 55px;
-	
 }
 
-nav a{ 
+nav a {
 	color: white;
 	text-decoration: none;
 	text-align: center;
 }
 
-nav .opcao{ 
+nav .opcao {
 	float: left;
 	width: 31.3%;
 	background-color: #b1ccf5;
 	padding: 10px 0;
 	margin: 0 1%;
 	font-size: 26px;
-	
 }
 
-nav .opcao:hover { 
+nav .opcao:hover {
 	background-color: #83afd3;
+}
 
-	}
-	
-section{
-
-	
-	clear:both;
-	min-height:400px;
-	width:100%;
+section {
+	clear: both;
+	min-height: 400px;
+	width: 100%;
 	margin-top: 0px;
 }
 
@@ -65,37 +61,34 @@ footer {
 	background-color: #005f89;
 	color: #fff;
 	text-align: center;
-	padding:10px;
+	padding: 10px;
 }
 
-section #topo { 
-	
+section #topo {
 	width: 900px;
 	margin: 0px auto;
 	height: 250px;
 	background-color: white;
 }
-.geladeira { 
+
+.geladeira {
 	height: 250px;
 	width: 125px;
 }
 
 .direita {
 	float: right;
-	
 }
 
 .esquerda {
 	float: left;
-	
 }
 
-section #titulos{
+section #titulos {
 	float: left;
 	height: 250px;
 	width: 650px;
 	margin: 0px auto;
-	
 }
 
 h2 {
@@ -106,29 +99,28 @@ h2 {
 }
 
 h3 {
-	text-align: center; 
+	text-align: center;
 	margin-top: 50px;
 	font-size: 20px;
-	
 }
 
-section p { 
+section p {
 	clear: both;
 	text-align: center;
 	margin: 10px 80px;
 }
 
-.tabelaProdutos{
-	margin: 10px auto; 
+.tabelaProdutos {
+	margin: 10px auto;
 	text-align: center;
 }
 
-.tituloTabela { 
-	text-align:center;
-	font-size:30px;
-	font-weight:bold;
+.tituloTabela {
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
 	color: #fff;
-	padding:5px;
+	padding: 5px;
 	border: transparent;
 }
 
@@ -140,43 +132,92 @@ tr, td, th {
 tr, td {
 	font-size: 14px;
 }
-tr:nth-child(even) { 
+
+tr:nth-child(even) {
 	background-color: #b1ccf5;
 }
-tr:nth-child(odd) { 
+
+tr:nth-child(odd) {
 	background-color: #83afd3;
-	
 }
 
-.tabelaFreezers { 
+.tabelaFreezers {
 	margin: 10px auto;
 	text-align: center;
 }
 
 .faleConosco {
-	width: 300px; 
-	margin: 0px auto; 
-	font-weight: bold; 
-	margin-bottom:10px;
-	
+	width: 300px;
+	margin: 0px auto;
+	font-weight: bold;
+	margin-bottom: 10px;
 }
 
-.faleConosco input, .faleConosco textarea, .faleConosco select { 
-	margin: 5px auto; 
-	width:100%;
+.faleConosco input, .faleConosco textarea, .faleConosco select {
+	margin: 5px auto;
+	width: 100%;
 	padding: 5px 0;
 }
 
-.faleConosco textarea { 
-	height:100px; 
+.faleConosco textarea {
+	height: 100px;
 	resize: none;
+}
+
+.faleConosco button {
+	width: 30%;
+	margin: 20px 10px;
+	background-color: #b1ccf5;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+label[for="botao"] {
+	font-size: 14px;
+	float: left;
+	margin: 1px 20px;
+}
+
+#botao[type="checkbox"] {
+	margin: 30%;
+	float: right;
+	margin: 0px 140px 45px ;
+	margin-top: -15px;
+}
+
+label[for = "sexoF"] {
+	font-size: 14px;
+
+
+	
+}
+#sexoF[type= "checkbox"] { 
+	
+
+
+	
+	}
+label[for = "sexoM"] {
+	font-size: 14px;
+
+
+	
+}
+#sexoM[type = "checkbox"] {
+
+
+	
 	
 }
 
-.faleConosco button { 
-	width:30%;
-	margin: 0 10%;
-	background-color: #b1ccf5;
-	font-weight: bold; 
-	font-size: 16px;
-} 
+#checkboxes {
+display: flex;	
+align-items: center;
+}
+
+input[type= "checkbox"] {
+	margin: 0;
+	padding: 0;
+}
+
+
